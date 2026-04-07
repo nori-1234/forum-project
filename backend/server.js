@@ -10,9 +10,8 @@ const userRoutes = require('./routes/users');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware - увеличен лимит для изображений (10 МБ)
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'forum-project-x14d-pnd18410a-nori-1234s-projects.vercel.app',
     credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
