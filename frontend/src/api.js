@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const API_URL = 'https://forum-project-4jzk.onrender.com/api';
+
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: API_URL,
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json'
